@@ -32,11 +32,11 @@ A Node is defined as:
             self.next = next_node
 """
 
-def has_cycles(head):
-    traversed_nodes = {head: True}
 
+def has_cycle(head):
+    traversed_nodes = {head: True}
     while head:
-        if traversed_nodes[head.next]:
+        if head.next in traversed_nodes:
             return True
         traversed_nodes[head.next] = True
         head = head.next
