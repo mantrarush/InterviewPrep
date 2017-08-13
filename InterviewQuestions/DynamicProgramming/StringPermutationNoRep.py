@@ -1,29 +1,13 @@
-def permute(input: str) -> [str]:
+def permuteV2(input: str) -> [str]:
     if len(input) == 2:
-        return [input, input[1]+input[0]]
-    charToAdd = input[0]    # "a"
-    restString = input[1:]  # "ntx"
-    permutations = permute(restString)
-    return [charToAdd + permutation for permutation in permutations]
-
-def superPerm(input: str) -> [str]:
+        return [input, input[::-1]]
     characters = list(input)
     answers = []
-    # for char in characters:
-    #     restString = input.
     for char in characters:
-        permutations = permute(char + "".join(input.split(char)))
-        for word in permutations:
-            answers.append(word)
+        stringToPermuteNext = "".join(input.split(char))
+        permutations = permuteV2(stringToPermuteNext)
+        answers = answers + [char + permutation for permutation in permutations]
 
     return answers
 
-# a n t
-# n a t
-# t a n
-
-print(permute("antx"))
-
-
-
-
+print(permuteV2("antx"))
