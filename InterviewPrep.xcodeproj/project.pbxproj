@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D24EC7B1F2E854F0070FCBE /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24EC7A1F2E854F0070FCBE /* Stack.swift */; };
+		4D24EC7E1F2EACBE0070FCBE /* RansomNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24EC7D1F2EACBE0070FCBE /* RansomNote.swift */; };
 		4DA9E0901F2E8475006FB752 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA9E08F1F2E8475006FB752 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		4D24EC7A1F2E854F0070FCBE /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stack.swift; path = DataStructures/Stack.swift; sourceTree = "<group>"; };
+		4D24EC7D1F2EACBE0070FCBE /* RansomNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RansomNote.swift; path = InterviewQuestions/Dictionaries/RansomNote.swift; sourceTree = "<group>"; };
 		4DA9E08C1F2E8475006FB752 /* InterviewPrep */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = InterviewPrep; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA9E08F1F2E8475006FB752 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -40,9 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D24EC7C1F2EACA60070FCBE /* InterviewQuestions */ = {
+			isa = PBXGroup;
+			children = (
+				4D24EC7D1F2EACBE0070FCBE /* RansomNote.swift */,
+			);
+			name = InterviewQuestions;
+			sourceTree = "<group>";
+		};
 		4DA9E0831F2E8475006FB752 = {
 			isa = PBXGroup;
 			children = (
+				4D24EC7C1F2EACA60070FCBE /* InterviewQuestions */,
 				4DA9E0961F2E84DA006FB752 /* DataStructures */,
 				4DA9E08E1F2E8475006FB752 /* InterviewPrep */,
 				4DA9E08D1F2E8475006FB752 /* Products */,
@@ -133,6 +144,7 @@
 			files = (
 				4D24EC7B1F2E854F0070FCBE /* Stack.swift in Sources */,
 				4DA9E0901F2E8475006FB752 /* main.swift in Sources */,
+				4D24EC7E1F2EACBE0070FCBE /* RansomNote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
